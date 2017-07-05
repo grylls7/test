@@ -38,7 +38,7 @@ public class ConfirmEditServlet extends HttpServlet{
 		try {
 			
 		       Class.forName("com.mysql.jdbc.Driver");
-			   Connection cnx = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/jeegeti","root","welcome");
+			   Connection cnx = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/jeegeti","root","root");
             String sql = "UPDATE utilisateur SET username=?, first_name=?, last_name=?, password=?, email=?, role=?, photo=?" +
         " WHERE id=?";
         PreparedStatement ps = (PreparedStatement) cnx .prepareStatement(sql);

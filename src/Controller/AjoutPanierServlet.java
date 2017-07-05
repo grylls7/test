@@ -44,7 +44,7 @@ public class AjoutPanierServlet extends HttpServlet {
 		try{
 			 
 			 Class.forName("com.mysql.jdbc.Driver");
-		     Connection cnx = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/jeegeti","root","welcome");
+		     Connection cnx = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/jeegeti","root","root");
 			Statement stmt = (Statement) cnx.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT * FROM produit WHERE id = "+idProduit);
 			Produit produit = new Produit();

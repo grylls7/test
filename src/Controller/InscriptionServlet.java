@@ -39,7 +39,7 @@ public class InscriptionServlet extends HttpServlet {
 		   try {
 			   
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection cnx = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/jeegeti","root","welcome");
+				Connection cnx = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/jeegeti","root","root");
 			    PreparedStatement pr =  (PreparedStatement) cnx.prepareStatement(
 						"insert into utilisateur (id,username,first_name,last_name,password,email,role,photo) values (default,?,?,?,?,?,?,?)"
 						);

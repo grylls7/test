@@ -29,7 +29,7 @@ public class PanierServlet extends HttpServlet {
         
         try {
 			   Class.forName("com.mysql.jdbc.Driver");
-			   Connection cnx = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/jeegeti","root","welcome");
+			   Connection cnx = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/jeegeti","root","root");
 			   
             String sql = "DELETE FROM panier WHERE id=?";
             PreparedStatement ps = (PreparedStatement) cnx.prepareStatement(sql);
