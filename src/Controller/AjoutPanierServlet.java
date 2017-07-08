@@ -18,7 +18,7 @@ import dao.Produit;
 
 public class AjoutPanierServlet extends HttpServlet {
 	
-	 public	 String nom,description,image,idProduit,idUser,qte;
+	 public	 String nom,description,image,idProduit,idUser,qte ;
 	 float prix;
 	 private PreparedStatement pr = null;
 	
@@ -93,7 +93,7 @@ public class AjoutPanierServlet extends HttpServlet {
 		     }catch(Exception e){}
 		
 		
-		resp.sendRedirect("panier.jsp");
+		resp.sendRedirect("panier.jsp"); 
 		
 	}
 
